@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle War - Site Officiel</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: white;
+            text-align: center;
+        }
+        .navbar {
+            background-color: #111;
+            padding: 15px;
+            text-align: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .navbar a:hover {
+            color: #ff0000;
+        }
+        .header {
+            background: url('ScreenShot00001.png') no-repeat center;
+            background-size: cover;
+            height: 450px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+        .header-title {
+            font-size: 3.5em;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+        .details {
+            font-size: 1.3em;
+            margin: 20px 0;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .btn-download {
+            background: linear-gradient(90deg, #ff0000, #cc0000);
+            color: white;
+            padding: 15px 40px;
+            font-size: 1.3em;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 8px;
+            transition: 0.3s;
+            text-transform: uppercase;
+            font-weight: bold;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+        }
+        .btn-download:hover {
+            background: linear-gradient(90deg, #cc0000, #990000);
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
+        }
+        .news-section {
+            margin-top: 40px;
+            text-align: left;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        }
+        .screenshots {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        .screenshots img {
+            width: 48%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+        .microsoft-logo {
+            width: 20px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Accueil</a>
+        <a href="#">News</a>
+        <a href="#">DLC & Pack</a>
+        <a href="#">Support</a>
+    </div>
+    <div class="header">
+        <div class="header-title">Entrez dans l'arène de Battle War</div>
+    </div>
+    <div class="container">
+        <div class="details">
+            <p>Éditeur : <strong>LVstudios & MDstudios</strong></p>
+            <p>Studio de programmation : <strong>SkyGame Rethel</strong></p>
+            <p>Plateforme compatible : <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft" class="microsoft-logo"></p>
+            <p><strong>Résumé :</strong> Battle War est un jeu de battle royale hors ligne avec 99 bots ! Un triple A développé sur Unreal Engine 5. Jouez dès le 2 avril 2025 avec le Chapitre 1, Saison 1 : Redemption !</p>
+        </div>
+        
+        <button class="btn-download" onclick="showError()">Télécharger Maintenant</button>
+        
+        <div class="news-section">
+            <h2>Actualités</h2>
+            <p>Aucune actualité pour le moment. Revenez plus tard !</p>
+        </div>
+
+        <div class="screenshots">
+            <img src="ScreenShot00001.png" alt="Screenshot 1">
+            <img src="ScreenShot00000.png" alt="Screenshot 2">
+        </div>
+    </div>
+
+    <script>
+        function showError() {
+            alert("BATTLE WAR: Vous êtes en avance ! (Sortie le 2 avril 2025)");
+        }
+    </script>
+</body>
+</html>
+
